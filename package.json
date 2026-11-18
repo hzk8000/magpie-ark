@@ -38,8 +38,8 @@
   "magpie": {
     "name": "Volcengine Ark",
     "summary": {
-      "en": "Volcengine Ark (火山方舟) as a provider of its own: an Ark API key for chat and Responses on the Coding or Agent Plan, and the account's AccessKey ID and Secret for the plan's quota. Agent Plan Team windows are read from the seat (GetSeatInfo → GetAgentPlanSeatAFPUsage) instead of GetAFPUsage, which Ark refuses for a team seat — yetone/magpie#5338, still open upstream.",
-      "zh": "把火山方舟接成独立的 provider：Ark API key 走 Coding / Agent Plan 的 chat 与 Responses，账号的 AccessKey ID / Secret 只用于读套餐额度。团队版 Agent Plan 的额度按席位读取（GetSeatInfo → GetAgentPlanSeatAFPUsage），不再撞 Ark 对 `GetAFPUsage` 的 403——即上游仍开着的 yetone/magpie#5338。"
+      "en": "Volcengine Ark as a provider of its own: an Ark API key for chat and Responses on the Coding or Agent Plan, and the account's AccessKey ID and Secret for quota. Agent Plan Team windows come from the seat (GetSeatInfo → GetAgentPlanSeatAFPUsage), which GetAFPUsage can't serve (yetone/magpie#5338).",
+      "zh": "把火山方舟接成独立 provider：Ark API key 走 Coding / Agent Plan 的 chat 与 Responses，账号 AccessKey ID / Secret 只用于读套餐额度。团队版 Agent Plan 的额度按席位读取（GetSeatInfo → GetAgentPlanSeatAFPUsage），不再撞 Ark 对 GetAFPUsage 的 403（上游 yetone/magpie#5338）。"
     },
     "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iMTAiIGZpbGw9IiMxNjY0ZmYiLz48cGF0aCBkPSJNMTIgMzRsOC0yMGg0bDggMjBoLTQuNGwtMS42LTQuNGgtOGwtMS42IDQuNEgxMnptNy4yLThoNS42TDIyIDE4LjYgMTkuMiAyNnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
   }
