@@ -56,6 +56,13 @@ pay-as-you-go 不发请求、缺凭据、控制面拒绝，以及签名与 Volce
 `MAGPIE_ARK_CONTROL_PLANE` 是测试 seam：设成 http URL 时控制面请求发往该地址
 （本地 mock 联调），默认空值即真实控制面。
 
+## 模型要选套餐支持的
+
+默认模型列表与内置 provider 一致，但方舟会按套餐拒绝不支持的模型（例如团队版 Agent Plan
+返回 `UnsupportedModel: The requested model does not support the agent plan feature`）。
+在 provider 编辑器里删掉套餐不支持的 id 即可；`ark/glm-5-3-flash`、`deepseek-v4-1-flash-*`
+在当前的团队版 Medium 上实测可用。
+
 ## 限额
 
 插件只声明 Chat 与 Responses 两种 API；Anthropic messages（`/api/plan`）没有接入。
